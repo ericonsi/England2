@@ -57,5 +57,14 @@ namespace England2.Controllers
         {
             return View();
         }
+
+
+
+public FileResult Reciept(string name, string password)
+        {
+            return File("/images/" + name + ".pdf", "application/pdf");
+        }
+
+
     }
 }
